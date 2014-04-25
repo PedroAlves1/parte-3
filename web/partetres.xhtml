@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Parte III 03</title>
+    </h:head>
+    <h:body>
+        <h:form>
+                     <h:outputLabel value="Carro 1: " /> <br/>
+
+         <h:outputLabel value="Modelo: "/> 
+         <h:inputText value="#{carroController.modelo1}"/> <br/>
+         
+         <h:outputLabel value="Ano: "/> 
+         <h:inputText value="#{carroController.ano1}"/> <br/>
+         
+         <h:outputLabel value="Preço: "/> 
+         <h:inputText value="#{carroController.preco1}"/> <br/>
+         
+         <h:outputLabel value="Consumo "/> 
+         <h:inputText value="#{carroController.consumo1}"/> <br/>
+         
+         <h:outputLabel value="Tipo de Combustível (Digite A para álcool e G para gasolina. : "/> 
+         <h:inputText value="#{carroController.tipo1}"/> <br/>
+
+         <h:outputLabel value="Descrição "/> 
+         <h:inputText value="#{carroController.descricao1}"/> <br/>
+         <br/>
+         <br/>
+         <h:outputLabel value="Carro 2: " /> <br/>
+         <h:outputLabel value="Modelo: "/> 
+         <h:inputText value="#{carroController.modelo2}"/> <br/>
+         
+         <h:outputLabel value="Ano: "/> 
+         <h:inputText value="#{carroController.ano2}"/> <br/>
+         
+         <h:outputLabel value="Preço: "/> 
+         <h:inputText value="#{carroController.preco2}"/> <br/>
+         
+         <h:outputLabel value="Consumo "/> 
+         <h:inputText value="#{carroController.consumo2}"/> <br/>
+         
+         <h:outputLabel value="Tipo de Combustível (Digite A para álcool e G para gasolina. : "/> 
+         <h:inputText value="#{carroController.tipo2}"/> <br/>
+
+         <h:outputLabel value="Descrição "/> 
+         <h:inputText value="#{carroController.descricao2}"/> <br/>
+         
+         
+         <h:commandButton value="Calcular menor IPVA" action="#{carroController.confirmaAction()}" /> <br/>
+         
+         <h:outputLabel value="Carro com menor IPVA: " /> <h:outputText value="#{carroController.ipvacarro.modelo}" /><br/>
+
+         
+        </h:form>
+    </h:body>
+</html>
+

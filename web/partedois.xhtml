@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Parte 02 - 03</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            
+            <h:outputLabel value="Hotel 1" /> <br/>
+            <h:outputText value="Nome:"/>
+            <h:inputText value="#{hotelController.nomeHotel1}" /> 
+            <br />
+             <h:outputText value="Descrição: " />
+            <h:inputText value="#{hotelController.descricaoHotel1}" /> 
+            <br />
+            
+            <h:outputText value="Estrelas: "/>
+            <h:inputText value="#{hotelController.estrelasHotel1}" /> 
+            <br />
+            
+            <h:outputText value="Preço: R$"/>
+            <h:inputText value="#{hotelController.precoHotel1}" />
+            <br />
+            
+                         
+            <h:outputLabel value="Hotel 2"/> <br/>
+            <h:outputText value="Nome:"/>
+            <h:inputText value="#{hotelController.nomeHotel2}" /> 
+            <br/>
+            <h:outputText value="Descrição: " />
+            <h:inputText value="#{hotelController.descricaoHotel2}" /> 
+            <br />
+            
+            <h:outputText value="Estrelas: "/>
+            <h:inputText value="#{hotelController.estrelasHotel2}" /> 
+            <br />
+            
+            <h:outputText value="Preço: R$"/>
+            <h:inputText value="#{hotelController.precoHotel2}" />
+            <br />
+            <br />
+            <h:commandButton value="Mostrar hotel mais barato" action="#{hotelController.baratoAction()}"/>
+            <br />
+            <h:commandButton value="Mostrar hotel com mais estrelas" action="#{hotelController.estrelasAction()}"/> 
+            <br/>
+            <h:outputText value="#{hotelController.hotelestrelas.nome}" /> <br/> 
+            <h:outputText value="#{hotelController.hotelestrelas.descricao}" /><br/> 
+            <h:outputText value="#{hotelController.hotelestrelas.estrelas}" /><br/> 
+            <h:outputLabel value="R$ " />
+            <h:outputText value="#{hotelController.hotelestrelas.preco}" /><br/> 
+ <br/>
+  <br/>
+
+ 
+ 
+            <h:outputText value="#{hotelController.hotelbarato.nome}" /> <br/> 
+            <h:outputText value="#{hotelController.hotelbarato.descricao}" /><br/> 
+            <h:outputText value="#{hotelController.hotelbarato.estrelas}" /><br/> 
+            <h:outputLabel value="R$ " />
+            <h:outputText value="#{hotelController.hotelbarato.preco}" /><br/> 
+
+            
+        </h:form>
+    </h:body>
+</html>
+
